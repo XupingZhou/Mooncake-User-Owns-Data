@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PBIWebApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApplicationID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Enter your app ClientID</Value>
+    </Setting>
+    <Setting Name="PowerBiAPIResource" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://analysis.chinacloudapi.cn/powerbi/api</Value>
+    </Setting>
+    <Setting Name="ApplicationSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Enter your app Secret</Value>
+    </Setting>
+    <Setting Name="AADAuthorityUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://login.chinacloudapi.cn/common/</Value>
+    </Setting>
+    <Setting Name="PowerBiDataset" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.powerbi.cn/v1.0/myorg/</Value>
+    </Setting>
+    <Setting Name="RedirectUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:13526/</Value>
+    </Setting>
+    <Setting Name="PowerBiApiUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.powerbi.cn/</Value>
+    </Setting>
+    <Setting Name="WorkspaceId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ReportId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
