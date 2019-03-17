@@ -1,5 +1,6 @@
-# Mooncake-User-Owns-Data
-This is for the Power BI Embeded demo of User owns data
+用户拥有数据将 Power BI 报表、仪表板或磁贴嵌入应用程序中
+ Penny Zhou
+
 本教程演示当针对使用“用户拥有数据”的客户使用“Azure 中的 Power BI Embedded”时，如何使用 Power BI .NET将报表集成到应用程序中，因此本教程中将使用服务主体的认证方式进行演示。“用户拥有数据”的样例中，用户在网站上获取相关Power BI资源的时候需要登录相关Power BI主体账号的用户名和密码，这样用户名和密码由用户保管会更安全。
 
 Azure Active Directory中注册一个Web应用
@@ -38,20 +39,52 @@ Power BI Service需要的权限具体如下：
  
 
 使用示例应用程序将Report嵌入内容
-将Cloud.config和Settings.settings下的“Enter your app ClientID”替换为Web应用的应用程序ID，“Enter your app Secret”替换为Web应用的密钥。
+请按照以下步骤，使用示例应用程序开始嵌入内容。
+1.	下载 Visual Studio（2013 版或更高版本）。 请务必下载最新版 NuGet 包。
+2.	从 GitHub 下载相应的示例代码。
+本示例使用integrate-report-web-app，如下所示。
+ 
+3.	将Cloud.config和Settings.settings下的“Enter your app ClientID”替换为Web应用的应用程序ID，“Enter your app Secret”替换为Web应用的密钥。
  
 Web应用的密码，可以通过如下方式添加。注意，添加密钥以后需要在关闭之前先保存到另一个地方，因为一旦关闭页面，密钥将会被隐藏。
  
-
-
-使用示例应用程序将Dashboard嵌入内容
-将Cloud.config和Settings.settings下的“Enter your app ClientID”替换为Web应用的应用程序ID，“Enter your app Secret”替换为Web应用的密钥。
+4.	点击运行Visual Studio程序，就可以得到相应报表的结果了。
  
 
 
+点击Get Report进行登录，使用PowerBI主体账号的用户名和密码登录，如下所示。
+ 
+成功登录以后，就可以正确显示report，默认显示的是Power BI Service网站下，“我的工作区”下的第一个Report，如果需要修改可以在应用代码中进行修改。
+
+ 
+
+使用示例应用程序将Dashboard嵌入内容
+请按照以下步骤，使用示例应用程序开始嵌入内容。
+1.	下载 Visual Studio（2013 版或更高版本）。 请务必下载最新版 NuGet 包。
+2.	从 GitHub 下载相应的示例代码。
+本示例使用integrate-dashboard-web-app，如下所示。
+ 
+3.	将Cloud.config和Settings.settings下的“Enter your app ClientID”替换为Web应用的应用程序ID，“Enter your app Secret”替换为Web应用的密钥。
+ 
+4.	点击运行Visual Studio程序，就可以得到相应报表的结果了。
+运行以后，点击Step1的sign in Power BI，使用Power BI主体账号用户名和密码登录，然后再点击Get Dashboard就可以得到EmbedUrl。
+ 
+将EmbedUrl输入Step3就可以得到相应的dashboard。注意，这里的dashboard显示的是Power BI Service网站下，“我的工作区”下的第一个dashboard，如果需要修改可以在应用代码中进行修改。
+ 
+点击Dashboard的相应区域，可以显示对应的log view。
+ 
 
 
 使用示例应用程序将Tile嵌入内容
-将Cloud.config和Settings.settings下的“Enter your app ClientID”替换为Web应用的应用程序ID，“Enter your app Secret”替换为Web应用的密钥。
+请按照以下步骤，使用示例应用程序开始嵌入内容。
+1.	下载 Visual Studio（2013 版或更高版本）。 请务必下载最新版 NuGet 包。
+2.	从 GitHub 下载相应的示例代码。
+本示例使用integrate-tile-web-app，如下所示。
  
-
+3.	将Cloud.config和Settings.settings下的“Enter your app ClientID”替换为Web应用的应用程序ID，“Enter your app Secret”替换为Web应用的密钥。
+ 
+4.	点击运行Visual Studio程序，就可以得到相应报表的结果了。
+点击Get tile使用Power BI主体账号用户名和密码登录.
+ 
+成功登录以后，就可以显示如下。
+ 
